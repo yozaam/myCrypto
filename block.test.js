@@ -1,4 +1,5 @@
 const Block = require('./block');
+const { GENESIS_DATA } = require('./config');
 
 //using jest 
 describe('Block',() => {
@@ -27,4 +28,18 @@ describe('Block',() => {
 
 	});
 
+	//describe inside this for genesis
+	describe('genesis()', () => {
+		const genesisBlock = Block.genesis();
+
+		console.log(genesisBlock);
+
+		it('returns a Block instance', () => {
+			expect (genesisBlock instanceof Block).toBe(true);
+		});
+
+		it('returns genesis data', () =>{
+			expect( genesisBlock).toEqual(GENESIS_DATA);
+		});
+	});
 });
