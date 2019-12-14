@@ -17,8 +17,10 @@ next task:\
 		correct block fields,\
 		lastHash reference previous block only! ( links ),\
 		valid hash~~\
-
-	\
-	chain replacement:\
-		all nodes need to agree on single chain\
-
+<br>
+		~~chain replacement:\
+		all nodes need to agree on single chain~~\
+\
+		~~stub console outputs~~\
+		
+		proof of work system
