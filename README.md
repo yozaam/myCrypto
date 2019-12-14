@@ -12,4 +12,9 @@ tasks completed:
 	developed sha256 hash functionality
 
 next task:
-	link blocks, create blockchain ! :D
+	~~link blocks, create blockchain ! :D~~
+	validate blockchain:
+		correct block fields,
+		lastHash reference previous block only! ( links )
+		valid hash
+
