@@ -8,11 +8,15 @@ describe('Block',() => {
 	const lastHash = 'fooLastHash'; 
 	const hash = 'fooHash';
 	const data = ['myBlockchain','data'];
+	const nonce = 1 ;
+	const difficulty = 1;
 	const block = new Block({
 		timestamp,
 		lastHash,
 		hash,
-		data 
+		data,
+		nonce,
+		difficulty
 	});
 	//equivalent to 
 	//  timestamp: timestamp,
@@ -21,11 +25,15 @@ describe('Block',() => {
 	//	data : data
 
 	//now writing my first test :D
-	it('has timestamp, lastHash, hash and data property',()=>{
+	it('has timestamp, lastHash, hash, nonce, difficuly and data property',()=>{
+
 		expect(block.lastHash).toEqual(lastHash);
 		expect(block.hash).toEqual(hash);
 		expect(block.data).toEqual(data);
 		expect(block.timestamp).toEqual(timestamp);
+		expect(block.nonce).toEqual(nonce);
+		expect(block.difficulty).toEqual(difficulty);
+
 
 	});
 
@@ -67,10 +75,23 @@ describe('Block',() => {
 
 		it('generates SHA-256 hash based on proper inputs',()=>{
 
-		expect(minedBlock.hash)
-		  .toEqual(cryptoHash(minedBlock.timestamp,lastBlock.hash,data));
+			expect(minedBlock.hash)
+			  .toEqual(
+			  	cryptoHash(
+				  	minedBlock.timestamp, 
+				  	minedBlock.difficulty,
+				  	minedBlock.nonce,
+				  	lastBlock.hash,
+				  	data
+			  	)
+			);
 	
-	});
+		});
+
+		it('sets a hash that matches the difficuly criteria',()=>{
+			expect(minedBlock.hash.substring(0,minedBlock.difficulty))
+				.toEqual('0'.repeat(minedBlock.difficulty));
+		});
 
 	});
 });

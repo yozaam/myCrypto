@@ -22,5 +22,7 @@ next task:\
 		all nodes need to agree on single chain~~\
 \
 		~~stub console outputs~~\
-		
-		proof of work system
+		\
+		~~proof of work system:\
+			computation to mine\
+			static difficulty~~\
