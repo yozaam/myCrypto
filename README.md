@@ -27,3 +27,5 @@ next task:\
 			computation to mine\
 			static difficulty~~\
 		~~dynamic difficulty with nonce~~\
+		~~use binary hash~~\
+		prevent difficulty jumps\
