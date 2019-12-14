@@ -26,3 +26,4 @@ next task:\
 		~~proof of work system:\
 			computation to mine\
 			static difficulty~~\
+		~~dynamic difficulty with nonce~~\

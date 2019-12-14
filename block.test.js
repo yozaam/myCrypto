@@ -1,10 +1,10 @@
 const Block = require('./block');
-const { GENESIS_DATA } = require('./config');
+const { GENESIS_DATA , MINE_RATE} = require('./config');
 const cryptoHash = require('./crypto-hash');
 
 //using jest 
 describe('Block',() => {
-	const timestamp = 'fooDate';
+	const timestamp = 2000;
 	const lastHash = 'fooLastHash'; 
 	const hash = 'fooHash';
 	const data = ['myBlockchain','data'];
@@ -52,6 +52,8 @@ describe('Block',() => {
 		});
 	});
 
+
+
 	describe('mineBlock()', ()=>{
 		const lastBlock = Block.genesis();
 		const data = 'mined';
@@ -93,5 +95,44 @@ describe('Block',() => {
 				.toEqual('0'.repeat(minedBlock.difficulty));
 		});
 
+		it('adjusts the difficulty', () =>{
+			const possibleResults = [lastBlock.difficulty+1, lastBlock.difficulty-1];
+
+			expect(possibleResults.includes(minedBlock.difficulty)).toBe(true);
+		});
+
 	});
+
+
+
+	describe('adjustDifficulty()',()=>{
+
+
+		it('raises difficulty for a quickly mined block',()=>{
+			
+			//will take block and timestamp of previous
+			expect(Block.adjustDifficulty({ 
+				originalBlock: block, timestamp: block.timestamp+MINE_RATE-100
+			}))
+				.toEqual(block.difficulty+1);
+		});
+
+		it('lowers difficulty for a slowly mined block',()=>{
+			
+			expect(Block.adjustDifficulty({ 
+				originalBlock: block, timestamp: block.timestamp+MINE_RATE+100
+			}))
+				.toEqual(block.difficulty-1);
+
+		});
+
+		it('has a lower limit of 1',()=>{
+			block.difficulty = -1;
+
+			expect(Block.adjustDifficulty({originalBlock:block })).toEqual(1);
+		});
+
+
+	});
+
 });
