@@ -28,4 +28,7 @@ next task:\
 			static difficulty~~\
 		~~dynamic difficulty with nonce~~\
 		~~use binary hash~~\
-		prevent difficulty jumps\
+		~~prevent difficulty jumps~~\
+		\
+		build the blockchain api & network:\
+
