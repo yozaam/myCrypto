@@ -31,4 +31,7 @@ next task:\
 		~~prevent difficulty jumps~~\
 		\
 		build the blockchain api & network:\
+		express js ? y/n : y\
+		~~common methods to send data and recieve with API\   -> read the chain -> write ||~~ \
 
+		real time msging network
