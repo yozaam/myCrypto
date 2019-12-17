@@ -34,5 +34,6 @@ next task:\
 		express js ? y/n : y\
 		~~common methods to send data and recieve with API\   -> read the chain -> write ||~~ \
 \
-		real time msging network using pubsub channels ->blockchain  ->redis? y/n n(setup!) ->pubnob? internet? yes  \
+		~~real time msging network using pubsub channels ->blockchain  ->redis? y/n n(setup!) ->pubnob? internet? NO  ~~\
+		yayy now duty to broadcast chain whenever adding
 

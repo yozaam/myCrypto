@@ -4,12 +4,14 @@ const redis = require("redis");
 //console.log(redis.createClient().publish);// its require working? let me try delay
 
 const CHANNELS = {
-	TEST: 'TEST'
+	TEST: 'TEST',
+	BLOCKCHAIN: 'BLOCKCHAIN'
 };
 
 class PubSub{  //one class coz at one time pub is sub
 
-	constuctor() {
+	constructor() {
+
 		this.publisher = redis.createClient();
 		this.subscriber = redis.createClient();
 
@@ -26,11 +28,13 @@ class PubSub{  //one class coz at one time pub is sub
 	}
 }
 
-const testPubSub = new PubSub();
+module.exports = PubSub;
+// const testPubSub = new PubSub();
 
-setTimeout(() =>testPubSub.publisher.publish(CHANNELS.TEST,'FOO'),1000);
+// setTimeout(() =>testPubSub.publisher.publish(CHANNELS.TEST,'FOO'),1000);
 
-//testPubSub.publisher.publish(CHANNELS.TEST,'FOO');
+
+//testPubSub.publisher.publish(CHANNELS.TEST,'FOO'); IT WAS NOT WORKING BECAUSE I WROTE constructor WITHOUT THE R AFTER T !! AHH BUGS
 
 //redis setup to be done as an issue for contributors
 //make the changes to package.json if redis must be run before starting app!
