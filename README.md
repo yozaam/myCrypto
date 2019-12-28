@@ -37,5 +37,6 @@ next task:\
 		~~real time msging network using pubsub channels ->blockchain  ->redis? y/n n(setup!) ->pubnob? internet? NO  ~~\
 		~~yayy now duty to broadcast chain whenever adding~~ \
 		\
-		now need to sync with all new peers
+		~~now need to sync with all new peers~~\
+		remove 
 
