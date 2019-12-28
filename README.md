@@ -38,5 +38,6 @@ next task:\
 		~~yayy now duty to broadcast chain whenever adding~~ \
 		\
 		~~now need to sync with all new peers~~\
-		remove 
-
+		~~remove redundant pubsub code to publish to one's own self~~\
+\
+THE BLOCKCHAIN IS READYYYY Yayy, now the crypto stuff wallets tx etc

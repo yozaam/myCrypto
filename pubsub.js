@@ -42,7 +42,12 @@ class PubSub{  //one class coz at one time pub is sub
 	}
 
 	publish({ channel , message}){
-		this.publisher.publish(channel, message );
+
+		this.subscriber.unsubscribe(channel, () =>{ //why read my own message? y/n : y
+			this.publisher.publish(channel, message ,()=>{
+				this.subscriber.subscribe(channel);  //yayy async love callbacks
+			});
+		});
 	}
 
 	broadcastChain(){
