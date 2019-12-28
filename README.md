@@ -35,5 +35,7 @@ next task:\
 		~~common methods to send data and recieve with API\   -> read the chain -> write ||~~ \
 \
 		~~real time msging network using pubsub channels ->blockchain  ->redis? y/n n(setup!) ->pubnob? internet? NO  ~~\
-		yayy now duty to broadcast chain whenever adding
+		~~yayy now duty to broadcast chain whenever adding~~ \
+		\
+		now need to sync with all new peers
 
