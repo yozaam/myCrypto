@@ -40,4 +40,6 @@ next task:\
 		~~now need to sync with all new peers~~\
 		~~remove redundant pubsub code to publish to one's own self~~\
 \
-THE BLOCKCHAIN IS READYYYY Yayy, now the crypto stuff wallets tx etc
+THE BLOCKCHAIN IS READYYYY Yayy, now the crypto stuff wallets tx etc \ \
+\
+wallet,keys,verifying tx 1.tamper,2.spender public key crypt \

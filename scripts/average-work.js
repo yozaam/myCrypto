@@ -1,7 +1,7 @@
 //Code to check if it is better to use binary representation of hashing algo
 
 
-const Blockchain = require('./blockchain');
+const Blockchain = require('../blockchain/index');
 
 const blockchain = new Blockchain();
 
