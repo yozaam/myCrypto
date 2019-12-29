@@ -45,3 +45,6 @@ THE BLOCKCHAIN IS READYYYY Yayy, now the crypto stuff wallets tx etc \ \
 wallet,keys,verifying tx 1.tamper,2.spender public key crypt \
 wallet\
  properties of ~~public address, balance,~~\
+ \
+ ~~gen signature and verify~~\
+ tx outputs and map\
