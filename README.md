@@ -47,4 +47,6 @@ wallet\
  properties of ~~public address, balance,~~\
  \
  ~~gen signature and verify~~\
- tx outputs and map\
+ ~~tx outputs and outputMap~~\
+ ~~inputs for a transaction~~\
+ verify signatures
