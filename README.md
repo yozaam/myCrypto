@@ -49,4 +49,5 @@ wallet\
  ~~gen signature and verify~~\
  ~~tx outputs and outputMap~~\
  ~~inputs for a transaction~~\
- verify signatures
+ ~~verify signatures~~, ~~validate entire transaction-> outputMap + signature~~\
+ add the ability to create transaction to wallet so we can access the wallet local state\
