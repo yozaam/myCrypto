@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c87c5546-5849-4678-9ca4-69ce9b6a4111" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/block.js" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/block.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/block.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain/index.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallet/index.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/index.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet/transaction.js" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/transaction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wallet/transaction.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/wallet/transaction.test.js" afterDir="false" />
     </list>
@@ -34,7 +30,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="js" value="28" />
+          <entry key="js" value="29" />
           <entry key="json" value="2" />
           <entry key="md" value="3" />
         </counts>
@@ -42,23 +38,23 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="2" />
-          <entry key="JavaScript" value="28" />
+          <entry key="JavaScript" value="29" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="4049" />
+          <entry key="js" value="5886" />
           <entry key="json" value="21" />
-          <entry key="md" value="226" />
+          <entry key="md" value="375" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="21" />
-          <entry key="JavaScript" value="4049" />
-          <entry key="Markdown" value="102" />
+          <entry key="JavaScript" value="5886" />
+          <entry key="Markdown" value="251" />
           <entry key="PLAIN_TEXT" value="124" />
         </counts>
       </usages-collector>
@@ -66,11 +62,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wallet/index.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+              <folding>
+                <element signature="e#432#939#0" />
+                <element signature="e#1071#1677#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wallet/transaction.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+            <state relative-caret-position="345">
+              <caret line="56" column="79" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+              <folding>
+                <element signature="n#!!block;n#createOutputMap#0;n#Transaction#0" />
+                <element signature="n#!!block;n#createInput#0;n#Transaction#0" />
+                <element signature="n#!!block;n#validTransaction#0;n#Transaction#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wallet/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="330">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -87,10 +101,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wallet/transaction.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1174">
-              <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+            <state relative-caret-position="225">
+              <caret line="115" column="38" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="38" />
               <folding>
                 <element signature="e#531#969#0" />
+                <element signature="e#998#1848#0" />
+                <element signature="e#1568#1840#0" />
+                <element signature="e#1891#2918#0" />
               </folding>
             </state>
           </provider>
@@ -109,8 +126,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="572">
-                <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+              <first_editor relative-caret-position="609">
+                <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
               </first_editor>
               <second_editor />
             </state>
@@ -136,13 +153,13 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/wallet/index.test.js" />
         <option value="$PROJECT_DIR$/util/index.js" />
-        <option value="$PROJECT_DIR$/wallet/index.js" />
         <option value="$PROJECT_DIR$/blockchain/block.js" />
         <option value="$PROJECT_DIR$/blockchain/index.js" />
         <option value="$PROJECT_DIR$/blockchain/index.test.js" />
         <option value="$PROJECT_DIR$/blockchain/block.test.js" />
+        <option value="$PROJECT_DIR$/wallet/index.js" />
+        <option value="$PROJECT_DIR$/wallet/index.test.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/wallet/transaction.test.js" />
         <option value="$PROJECT_DIR$/wallet/transaction.js" />
@@ -206,7 +223,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -240,12 +257,12 @@
       <updated>1577541351689</updated>
       <workItem from="1577541353098" duration="5784000" />
       <workItem from="1577600860863" duration="497000" />
-      <workItem from="1577601442326" duration="4461000" />
+      <workItem from="1577601442326" duration="7641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10742000" />
+    <option name="totallyTimeSpent" value="13922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1002" height="800" extended-state="0" />
@@ -322,13 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wallet/index.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blockchain/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -357,6 +367,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/util/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="533">
@@ -365,8 +382,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="572">
-            <caret line="51" column="37" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <first_editor relative-caret-position="609">
+            <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           </first_editor>
           <second_editor />
         </state>
@@ -374,32 +391,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wallet/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        <state relative-caret-position="330">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/index.js">
+    <entry file="file://$PROJECT_DIR$/wallet/index.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        <state relative-caret-position="391">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <element signature="e#432#939#0" />
+            <element signature="e#1071#1677#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wallet/transaction.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1174">
-          <caret line="95" column="74" selection-start-line="95" selection-start-column="74" selection-end-line="95" selection-end-column="74" />
+        <state relative-caret-position="225">
+          <caret line="115" column="38" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="38" />
           <folding>
             <element signature="e#531#969#0" />
+            <element signature="e#998#1848#0" />
+            <element signature="e#1568#1840#0" />
+            <element signature="e#1891#2918#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wallet/transaction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+        <state relative-caret-position="345">
+          <caret line="56" column="79" selection-start-line="56" selection-start-column="79" selection-end-line="56" selection-end-column="79" />
+          <folding>
+            <element signature="n#!!block;n#createOutputMap#0;n#Transaction#0" />
+            <element signature="n#!!block;n#createInput#0;n#Transaction#0" />
+            <element signature="n#!!block;n#validTransaction#0;n#Transaction#0" />
+          </folding>
         </state>
       </provider>
     </entry>

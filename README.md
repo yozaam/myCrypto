@@ -50,4 +50,6 @@ wallet\
  ~~tx outputs and outputMap~~\
  ~~inputs for a transaction~~\
  ~~verify signatures~~, ~~validate entire transaction-> outputMap + signature~~\
- add the ability to create transaction to wallet so we can access the wallet local state\
+ ~~add the ability to create transaction to wallet so we can access the wallet local state~~\
+ allow multiple outputs \
+ WAIT js is going to give same hash for all the outputMap object everytime because objects hash is same even when changing the data! 
