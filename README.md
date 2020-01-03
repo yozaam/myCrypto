@@ -56,4 +56,5 @@ wallet\
 lol just stringify~~\
 \
 ~~transaction edge cases, same recipient and all~~\
-transaction pooooollllll\
+~~transaction pooooollllll~~\
+enpoint for transaction pool+handle invalid\
