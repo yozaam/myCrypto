@@ -57,4 +57,8 @@ lol just stringify~~\
 \
 ~~transaction edge cases, same recipient and all~~\
 ~~transaction pooooollllll~~\
-enpoint for transaction pool+handle invalid\
+~~endpoint for transaction pool+handle invalid~~\
+~~broadcast,handle transactions\
+sync on connect~~\
+put the transactions into the blocks+~~reward miner~~\
+->get data from pool->if valid tx->
