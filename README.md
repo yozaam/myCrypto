@@ -60,5 +60,7 @@ lol just stringify~~\
 ~~endpoint for transaction pool+handle invalid~~\
 ~~broadcast,handle transactions\
 sync on connect~~\
-put the transactions into the blocks+~~reward miner~~\
-->get data from pool->if valid tx->
+~~put the transactions into the blocks+reward miner\
+->get data from pool->if valid tx...\
+clear pool if added~~\
+wallet checks balance\
