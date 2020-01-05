@@ -147,6 +147,62 @@ describe('Wallet',()=>{
                 );
 
             });
+
+            describe('and the wallet has made a transaction',()=>{
+               let recentTransaction;
+
+                beforeEach(()=>{
+                    recentTransaction = wallet.createTransaction({
+                        recipient: 'foo-address',
+                        amount:30
+                    });
+
+                    blockchain.addBlock({data:[recentTransaction]});
+                });
+
+                it('returns output amount of the recent transaction',()=>{
+                    expect(
+                        Wallet.calculateBalance({
+                            chain : blockchain.chain,
+                            address : wallet.publicKey
+                        })
+                    ).toEqual(recentTransaction.outputMap[wallet.publicKey]);
+                });
+
+                describe('and there are outputs after recentTransaction',()=>{
+                    let sameBlockTransaction,nextBlockTransaction;
+
+                    beforeEach(()=>{
+                        recentTransaction = wallet.createTransaction({
+                            recipient: 'later-foo-address',
+                            amount:60
+                        });
+                        sameBlockTransaction = Transaction.rewardTransaction({ minerWallet:wallet});
+
+                        blockchain.addBlock({data:[recentTransaction , sameBlockTransaction]});
+                        nextBlockTransaction = new Wallet().createTransaction({
+                            recipient: wallet.publicKey,
+                            amount:75
+                        });
+
+                        blockchain.addBlock({data:[nextBlockTransaction]});
+
+                        it('includes output amount in the returned balance',()=>{
+                            expect(
+                                Wallet.calculateBalance({
+                                    chain:blockchain.chain,
+                                    address:wallet.publicKey
+                                })
+                            ).toEqual(
+                                recentTransaction.outputMap[wallet.publicKey]+
+                                sameTransaction.outputMap[wallet.publicKey]+
+                                nextBlockTransaction.outputMap[wallet.publicKey]
+                            )
+                        });
+
+                    });
+                });
+            });
         });
 
     });

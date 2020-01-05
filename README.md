@@ -65,4 +65,4 @@ sync on connect~~\
 clear pool if added~~\
 ~~wallet checks balance~~\
 ~~check balance before each transaction~~\ 
-~~only sum from recent!\
+~~only sum from recent!~~\
