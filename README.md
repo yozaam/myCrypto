@@ -63,4 +63,6 @@ sync on connect~~\
 ~~put the transactions into the blocks+reward miner\
 ->get data from pool->if valid tx...\
 clear pool if added~~\
-wallet checks balance\
+~~wallet checks balance~~\
+~~check balance before each transaction~~\ 
+~~only sum from recent!\
