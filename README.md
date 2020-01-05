@@ -66,3 +66,6 @@ clear pool if added~~\
 ~~wallet checks balance~~\
 ~~check balance before each transaction~~\ 
 ~~only sum from recent!~~\
+~~validate the data! in the block thus validate tx blocks\
+format of tx ie IO->only one reward->input acc to balance-> no identical tx~~\
+BACKEND COMPLETE!\
