@@ -69,3 +69,5 @@ clear pool if added~~\
 ~~validate the data! in the block thus validate tx blocks\
 format of tx ie IO->only one reward->input acc to balance-> no identical tx~~\
 BACKEND COMPLETE!\
+front end \
+block explorer 
