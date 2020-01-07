@@ -1,8 +1,9 @@
 import React from 'react';
 import{render} from 'react-dom';
+import App from './components/App'
 
 render(
-    <div> myCrypto in react: live updates with parcel</div>,
+    <App />,
     document.getElementById('root')
 );
 
