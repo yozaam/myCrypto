@@ -70,4 +70,6 @@ clear pool if added~~\
 format of tx ie IO->only one reward->input acc to balance-> no identical tx~~\
 BACKEND COMPLETE!\
 front end \
-block explorer 
+block explorer \
+react and parcel setup\
+build components\
