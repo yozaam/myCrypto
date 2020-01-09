@@ -1,4 +1,9 @@
 import React,{Component} from 'react';
+import Block from './Block';
+import {Link} from 'react-router-dom';
+import splitBlock from '../assets/splitBlock.gif';
+import spinningRainbowDark from "../assets/spinningRainbowDark.gif";
+
 
 class Blocks extends Component{
     state = {
@@ -17,14 +22,22 @@ class Blocks extends Component{
 
         return (
             <div>
+                <img className="logo" src={splitBlock} alt="myCrypto..."/>
+                <br/>
+                <br/>
+                <div>
+                    <Link to='/'>
+                        Home...
+                    </Link>
+                </div>
                 <h3>
-                    BLOCKS
+                    Blocks...
                 </h3>
                 {
                     this.state.blocks.map( block => {
                         return (
-                            <div key = {block.hash}>{block.hash}</div>
-                        )
+                            <Block key={block.hash} block={block} />
+                        );
                     })
                 }
             </div>
