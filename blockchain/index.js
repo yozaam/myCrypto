@@ -33,7 +33,7 @@ class Blockchain {
 			return;
 		}
 
-        if(validateTransactions && !this.validTransactionData(chain)){
+        if(validateTransactions && !this.validTransactionData({chain})){
         	console.error('The transaction data is invalid')
         	return;
 		}
@@ -73,7 +73,7 @@ class Blockchain {
 						address: transaction.input.address
 					});
 					if(transaction.input.amount !== trueBalance){
-                        console.error('Transaction input balance invalid');
+                        console.error('Transaction input balance invalid true is',trueBalance,'you are giving' ,transaction.input);
                         return false;
 					}
 					if(transactionSet.has(transaction)){

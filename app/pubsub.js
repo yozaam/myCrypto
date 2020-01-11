@@ -32,6 +32,7 @@ class PubSub{  //one class coz at one time pub is sub
 
 			const parsedMessage = JSON.parse(message);
 
+
 			switch (channel) {
 				case CHANNELS.BLOCKCHAIN:
                     this.blockchain.replaceChain(parsedMessage,true,()=>{

@@ -96,7 +96,7 @@ const syncWithRootState = () => {
 		if(!error && response.statusCode === 200){
 			const rootChain = JSON.parse(body);
 
-			console.log('replace chain on a sync with',rootChain);
+			console.log('replace chain on a sync with',rootChain,'at PORT:',PORT);
 			blockchain.replaceChain(rootChain);
 		}
 	});

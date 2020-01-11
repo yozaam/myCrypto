@@ -47,7 +47,7 @@ class Wallet{
 
                 const addressOutput = transaction.outputMap[address];
                 if(addressOutput){
-                    outputsTotal+= addressOutput;
+                    outputsTotal = outputsTotal + addressOutput;
                 }
             }
             if(hasConductedTransaction){

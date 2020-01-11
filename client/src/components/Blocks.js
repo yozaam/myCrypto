@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import Block from './Block';
 import {Link} from 'react-router-dom';
 import splitBlock from '../assets/splitBlock.gif';
-import spinningRainbowDark from "../assets/spinningRainbowDark.gif";
 
 
 class Blocks extends Component{
@@ -11,7 +10,7 @@ class Blocks extends Component{
     };
 
     componentDidMount(){
-        fetch('http://localhost:3000/api/blocks')
+        fetch(`${document.location.origin}/api/blocks`)
             .then(response => response.json())
             .then(json=> this.setState({blocks:json}));
     }

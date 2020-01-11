@@ -37158,8 +37158,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _default = (0, _createBrowserHistory.default)();
 
 exports.default = _default;
-},{"history/createBrowserHistory":"../../node_modules/history/createBrowserHistory.js"}],"assets/spinningRainbowDark.gif":[function(require,module,exports) {
-module.exports = "/spinningRainbowDark.b689434e.gif";
+},{"history/createBrowserHistory":"../../node_modules/history/createBrowserHistory.js"}],"assets/noodles.gif":[function(require,module,exports) {
+module.exports = "/noodles.e29f3dee.gif";
 },{}],"components/App.js":[function(require,module,exports) {
 "use strict";
 
@@ -37172,7 +37172,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactRouterDom = require("react-router-dom");
 
-var _spinningRainbowDark = _interopRequireDefault(require("../assets/spinningRainbowDark.gif"));
+var _noodles = _interopRequireDefault(require("../assets/noodles.gif"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37226,7 +37226,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch('http://localhost:3000/api/wallet-info').then(function (response) {
+      fetch("".concat(document.location.origin, "/api/wallet-info")).then(function (response) {
         return response.json();
       }).then(function (json) {
         return _this2.setState({
@@ -37244,11 +37244,15 @@ function (_Component) {
         className: "App"
       }, _react.default.createElement("img", {
         className: "logo",
-        src: _spinningRainbowDark.default,
+        src: _noodles.default,
         alt: "myCrypto..."
       }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("div", null, _react.default.createElement("h3", null, " ", _react.default.createElement("em", null, "Welcome to your chains..."))), _react.default.createElement("br", null), _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
         to: "/blocks"
-      }, "Blocks...")), _react.default.createElement("br", null), _react.default.createElement("div", {
+      }, "Blocks...")), _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/conduct-transaction"
+      }, "Conduct Transaction...")), _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/transaction-pool"
+      }, "View Unconfirmed Transactions...")), _react.default.createElement("br", null), _react.default.createElement("div", {
         className: "WalletInfo"
       }, _react.default.createElement("div", null, _react.default.createElement("strong", null, "Address:"), " ", address), _react.default.createElement("div", null, _react.default.createElement("strong", null, "Balance:"), " ", balance)));
     }
@@ -37259,7 +37263,7 @@ function (_Component) {
 
 var _default = App;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../assets/spinningRainbowDark.gif":"assets/spinningRainbowDark.gif"}],"../../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../assets/noodles.gif":"assets/noodles.gif"}],"../../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -51532,14 +51536,12 @@ function (_Component) {
           }));
         }), _react.default.createElement("br", null), _react.default.createElement(_reactBootstrap.Button, {
           variant: "danger",
-          bsSize: "small",
           onClick: this.toggleTransaction
         }, "Show Less"));
       }
 
       return _react.default.createElement("div", null, _react.default.createElement("div", null, "Data: ", dataDisplay), _react.default.createElement(_reactBootstrap.Button, {
         variant: "danger",
-        bsSize: "small",
         onClick: this.toggleTransaction
       }, "Show More"));
     }
@@ -51568,8 +51570,6 @@ var _Block = _interopRequireDefault(require("./Block"));
 var _reactRouterDom = require("react-router-dom");
 
 var _splitBlock = _interopRequireDefault(require("../assets/splitBlock.gif"));
-
-var _spinningRainbowDark = _interopRequireDefault(require("../assets/spinningRainbowDark.gif"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -51623,7 +51623,7 @@ function (_Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      fetch('http://localhost:3000/api/blocks').then(function (response) {
+      fetch("".concat(document.location.origin, "/api/blocks")).then(function (response) {
         return response.json();
       }).then(function (json) {
         return _this2.setState({
@@ -51655,7 +51655,297 @@ function (_Component) {
 
 var _default = Blocks;
 exports.default = _default;
-},{"react":"../../node_modules/react/index.js","./Block":"components/Block.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../assets/splitBlock.gif":"assets/splitBlock.gif","../assets/spinningRainbowDark.gif":"assets/spinningRainbowDark.gif"}],"../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","./Block":"components/Block.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../assets/splitBlock.gif":"assets/splitBlock.gif"}],"assets/hoops.gif":[function(require,module,exports) {
+module.exports = "/hoops.d58ef2e4.gif";
+},{}],"components/ConductTransaction.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactBootstrap = require("react-bootstrap");
+
+var _history = _interopRequireDefault(require("../history"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _hoops = _interopRequireDefault(require("../assets/hoops.gif"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var ConductTransaction =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ConductTransaction, _Component);
+
+  function ConductTransaction() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    var _temp;
+
+    _classCallCheck(this, ConductTransaction);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(ConductTransaction)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
+      recipient: "",
+      amount: 0
+    }, _this.updateRecipient = function (event) {
+      _this.setState({
+        recipient: event.target.value
+      });
+    }, _this.updateAmount = function (event) {
+      _this.setState({
+        amount: Number(event.target.value)
+      });
+    }, _this.conductTransaction = function () {
+      var _this$state = _this.state,
+          recipient = _this$state.recipient,
+          amount = _this$state.amount;
+      fetch("".concat(document.location.origin, "/api/transact"), {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          recipient: recipient,
+          amount: amount
+        })
+      }).then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        alert(json.message || json.type);
+
+        _history.default.push('/transaction-pool');
+      });
+    }, _temp));
+  }
+
+  _createClass(ConductTransaction, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "ConductTransaction"
+      }, _react.default.createElement("img", {
+        className: "logo",
+        src: _hoops.default,
+        alt: "..."
+      }), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
+        to: "/"
+      }, "Home"), _react.default.createElement("h3", null, "Conduct a Transaction"), _react.default.createElement("br", null), _react.default.createElement(_reactBootstrap.FormGroup, null, _react.default.createElement(_reactBootstrap.FormControl, {
+        input: "text",
+        placeholder: "recipient",
+        value: this.state.recipient,
+        onChange: this.updateRecipient
+      })), _react.default.createElement(_reactBootstrap.FormGroup, null, _react.default.createElement(_reactBootstrap.FormControl, {
+        input: "number",
+        placeholder: "amount",
+        value: this.state.amount,
+        onChange: this.updateAmount
+      })), _react.default.createElement(_reactBootstrap.Button, {
+        variant: "danger",
+        onClick: this.conductTransaction
+      }, "Submit"));
+    }
+  }]);
+
+  return ConductTransaction;
+}(_react.Component);
+
+;
+var _default = ConductTransaction;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","react-bootstrap":"../../node_modules/react-bootstrap/esm/index.js","../history":"history.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","../assets/hoops.gif":"assets/hoops.gif"}],"components/Transaction.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Transaction = function Transaction(_ref) {
+  var transaction = _ref.transaction;
+  var input = transaction.input,
+      outputMap = transaction.outputMap;
+  var recipients = Object.keys(outputMap);
+  return _react.default.createElement("div", {
+    className: "Transaction"
+  }, _react.default.createElement("div", null, "From: ", "".concat(input.address.substring(0, 20), "..."), "| Balance:", input.amount), recipients.map(function (recipient) {
+    return _react.default.createElement("div", {
+      key: recipient
+    }, "To:", "".concat(recipient.substring(0, 20), "...}"), "| Sent:", outputMap[recipient]);
+  }));
+};
+
+var _default = Transaction;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js"}],"assets/spinningRainbowDark.gif":[function(require,module,exports) {
+module.exports = "/spinningRainbowDark.b689434e.gif";
+},{}],"components/TransactionPool.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _reactBootstrap = require("react-bootstrap");
+
+var _Transaction = _interopRequireDefault(require("./Transaction"));
+
+var _spinningRainbowDark = _interopRequireDefault(require("../assets/spinningRainbowDark.gif"));
+
+var _history = _interopRequireDefault(require("../history"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var POLL_INTERVAL_MS = 10000;
+
+var TransactionPool =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(TransactionPool, _Component);
+
+  function TransactionPool() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    var _temp;
+
+    _classCallCheck(this, TransactionPool);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(TransactionPool)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
+      transactionPoolMap: {}
+    }, _this.fetchTransactionPoolMap = function () {
+      fetch("".concat(document.location.origin, "/api/transaction-pool-map")).then(function (response) {
+        return response.json();
+      }).then(function (json) {
+        return _this.setState({
+          transactionPoolMap: json
+        });
+      });
+    }, _this.fetchMineTransactions = function () {
+      fetch("".concat(document.location.origin, "/api/mine-transactions")).then(function (response) {
+        if (response.status === 200) {
+          alert('success');
+
+          _history.default.push('/blocks');
+        } else {
+          alert('The mine-transactions block request did not complete :(');
+        }
+      });
+    }, _temp));
+  }
+
+  _createClass(TransactionPool, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this.fetchTransactionPoolMap();
+      this.fetchPoolMap = setInterval(function () {
+        return _this2.fetchTransactionPoolMap();
+      }, POLL_INTERVAL_MS);
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      clearInterval(this.fetchPoolMap);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        className: "TransactionPool"
+      }, _react.default.createElement("img", {
+        className: "logo",
+        src: _spinningRainbowDark.default
+      }), _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/"
+      }, "Home")), _react.default.createElement("h3", null, "TransactionPool"), Object.values(this.state.transactionPoolMap).map(function (transaction) {
+        return _react.default.createElement("div", {
+          key: transaction.id
+        }, _react.default.createElement("hr", null), _react.default.createElement(_Transaction.default, {
+          transaction: transaction
+        }));
+      }), _react.default.createElement("hr", null), _react.default.createElement(_reactBootstrap.Button, {
+        variant: "danger",
+        onClick: this.fetchMineTransactions
+      }, "Mine the transactions! (Add to the blockchain...)"));
+    }
+  }]);
+
+  return TransactionPool;
+}(_react.Component);
+
+var _default = TransactionPool;
+exports.default = _default;
+},{"react":"../../node_modules/react/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","react-bootstrap":"../../node_modules/react-bootstrap/esm/index.js","./Transaction":"components/Transaction.js","../assets/spinningRainbowDark.gif":"assets/spinningRainbowDark.gif","../history":"history.js"}],"../../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -51742,6 +52032,10 @@ var _App = _interopRequireDefault(require("./components/App"));
 
 var _Blocks = _interopRequireDefault(require("./components/Blocks"));
 
+var _ConductTransaction = _interopRequireDefault(require("./components/ConductTransaction"));
+
+var _TransactionPool = _interopRequireDefault(require("./components/TransactionPool"));
+
 require("./index.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -51755,9 +52049,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 }), _react.default.createElement(_reactRouterDom.Route, {
   path: "/blocks",
   component: _Blocks.default
+}), _react.default.createElement(_reactRouterDom.Route, {
+  path: "/conduct-transaction",
+  component: _ConductTransaction.default
+}), _react.default.createElement(_reactRouterDom.Route, {
+  path: "/transaction-pool",
+  component: _TransactionPool.default
 }))), document.getElementById('root'));
 console.log('hey bitcain');
-},{"react":"../../node_modules/react/index.js","react-dom":"../../node_modules/react-dom/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","./history":"history.js","./components/App":"components/App.js","./components/Blocks":"components/Blocks.js","./index.css":"index.css"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../../node_modules/react/index.js","react-dom":"../../node_modules/react-dom/index.js","react-router-dom":"../../node_modules/react-router-dom/es/index.js","./history":"history.js","./components/App":"components/App.js","./components/Blocks":"components/Blocks.js","./components/ConductTransaction":"components/ConductTransaction.js","./components/TransactionPool":"components/TransactionPool.js","./index.css":"index.css"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -51785,7 +52085,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53619" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64480" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -74,5 +74,9 @@ front end \
 react and parcel setup\
 build components\
 blockchain frontend~~\
-cyptocurrency frontend\
-blocks & wallet separate
+~~cyptocurrency frontend\
+blocks & wallet separate\
+transaction pool\
+mine~~\
+MVP readyyy!!\
+Issue :dev-peer is considering invalid for dev blockchain(mayber coz diff wallets, need to add import wallet also)\\\

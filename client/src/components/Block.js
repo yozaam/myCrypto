@@ -34,7 +34,6 @@ class Block extends Component{
                     <br/>
                     <Button
                         variant="danger"
-                        bsSize="small"
                         onClick={this.toggleTransaction}>
                         Show Less
                     </Button>
@@ -49,7 +48,6 @@ class Block extends Component{
                 </div>
                 <Button
                     variant="danger"
-                    bsSize="small"
                     onClick={this.toggleTransaction}>
                     Show More
                 </Button>
@@ -59,7 +57,7 @@ class Block extends Component{
 
     render(){
 
-        console.log('dt',this.displayTransaction)
+        console.log('dt',this.displayTransaction);
         const {timestamp,hash} = this.props.block;
 
         const hashDisplay =`${hash.substring(0,15)}...`;
