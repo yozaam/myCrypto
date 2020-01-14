@@ -8,6 +8,8 @@ const TransactionPool = require('./wallet/transaction-pool');
 const Wallet = require('./wallet');
 const TransactionMiner = require('./app/transaction-miner');
 
+const isDevelopment = process.env.ENV === 'development' ;
+
 const app = express();
 const blockchain = new Blockchain();
 const transactionPool = new TransactionPool();
@@ -110,7 +112,7 @@ const syncWithRootState = () => {
 	})
 };
 
-if(1){
+if(isDevelopment){
 
     const walletFoo = new Wallet();
     const walletBar = new Wallet();
@@ -160,7 +162,7 @@ if(process.env.GENERATE_PEER_PORT === 'true'){
 	PEER_PORT = DEFAULT_PORT +  Math.ceil(Math.random()*1000);
 }
 
-const PORT = PEER_PORT || DEFAULT_PORT;
+const PORT = process.env.OPENSHIFT_NODEJS_PORT || PEER_PORT || DEFAULT_PORT;
 
 app.listen(PORT, () => {
 	console.log(`listening at localhost:${PORT}`);
