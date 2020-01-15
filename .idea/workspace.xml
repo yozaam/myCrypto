@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c87c5546-5849-4678-9ca4-69ce9b6a4111" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/src/components/Block.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Block.js" afterDir="false" />
-    </list>
+    <list default="true" id="c87c5546-5849-4678-9ca4-69ce9b6a4111" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -152,8 +150,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/src/components/Block.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="240">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -1148,7 +1146,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71814000" />
+    <option name="totallyTimeSpent" value="72109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="877" height="800" extended-state="0" />
@@ -1483,8 +1481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Block.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
