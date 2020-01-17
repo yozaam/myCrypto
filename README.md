@@ -1,5 +1,5 @@
 
-##it is ready, check it out at : 
+## it is ready, check it out at : 
 https://whispering-cliffs-93405.herokuapp.com/
 
 and a peer is running at : 
