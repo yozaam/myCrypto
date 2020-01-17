@@ -1,4 +1,22 @@
+
+##it is ready, check it out at : 
+https://whispering-cliffs-93405.herokuapp.com/
+
+and a peer is running at : 
+https://thawing-bayou-82976.herokuapp.com/
+
+Now i must add a file system persistent storage of the chain
+
+
+
+
+
+
+
+
 A block stores: ( block.js file )\
+
+
   timestamp\
   lastHash\
   data\
