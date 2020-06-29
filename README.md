@@ -9,6 +9,16 @@ https://thawing-bayou-82976.herokuapp.com/
 ## Some Screenshots :)
 
 
+<img width="1224" alt="Screenshot 2020-06-30 at 12 23 54 AM" src="https://user-images.githubusercontent.com/20089340/86045038-a07af800-ba68-11ea-93da-87348e5b5429.png">
+
+<img width="1132" alt="Screenshot 2020-06-30 at 12 24 25 AM" src="https://user-images.githubusercontent.com/20089340/86045015-9822bd00-ba68-11ea-99d0-dc7b7c62b1c1.png">
+
+<img width="712" alt="Screenshot 2020-06-30 at 12 24 33 AM" src="https://user-images.githubusercontent.com/20089340/86044992-8f31eb80-ba68-11ea-9231-baafd0f3d0dd.png">
+
+
+<img width="336" alt="Screenshot 2020-06-30 at 12 24 48 AM" src="https://user-images.githubusercontent.com/20089340/86044978-8b05ce00-ba68-11ea-82d3-f79ce576eb59.png">
+
+
 
 ## My Journey & Checklist
 
