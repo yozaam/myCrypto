@@ -7,7 +7,7 @@ and a peer is running at :) :
 https://thawing-bayou-82976.herokuapp.com/
 
 ## Some Screenshots :)
-
+### I honestly learnt TDD and Node.js only through this project:)
 
 <img width="1224" alt="Screenshot 2020-06-30 at 12 23 54 AM" src="https://user-images.githubusercontent.com/20089340/86045038-a07af800-ba68-11ea-93da-87348e5b5429.png">
 
