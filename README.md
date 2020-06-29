@@ -1,17 +1,20 @@
-## all done
+## all done Yay :D => keeping this checklist as a memory of my biggest project, feel free to go through it to build your own ;)
+
 ## it is ready, check it out at : 
 https://whispering-cliffs-93405.herokuapp.com/
 
-and a peer is running at : 
+and a peer is running at :) : 
 https://thawing-bayou-82976.herokuapp.com/
 
+## Some Screenshots :)
+
+
+
+## My Journey & Checklist
+
+
+
 Now i must add a file system persistent storage of the chain
-
-
-
-
-
-
 
 
 A block stores: ( block.js file )\
