@@ -3,11 +3,11 @@
 ## it is ready, check it out at : 
 https://whispering-cliffs-93405.herokuapp.com/
 
-and a peer is running at :) : 
-https://thawing-bayou-82976.herokuapp.com/
+<!--and a peer is running at :) : 
+https://thawing-bayou-82976.herokuapp.com/-->
 
 ## Some Screenshots :)
-### I learnt TDD and Node.js only through this project:)
+### I learnt TDD and Node.js through this project:)
 
 <img width="1224" alt="Screenshot 2020-06-30 at 12 23 54 AM" src="https://user-images.githubusercontent.com/20089340/86045038-a07af800-ba68-11ea-93da-87348e5b5429.png">
 
@@ -23,6 +23,7 @@ https://thawing-bayou-82976.herokuapp.com/
 ## My Journey & Checklist
 
 
+keeping this below the readme as it is the roadmap I followed :D
 
 Now i must add a file system persistent storage of the chain
 
@@ -73,7 +74,7 @@ next task:\
 \
 THE BLOCKCHAIN IS READYYYY Yayy, now the crypto stuff wallets tx etc \ \
 
-keeping this below the readme as it is the roadmap I followed :D
+
 \
 wallet,keys,verifying tx 1.tamper,2.spender public key crypt \
 wallet\
